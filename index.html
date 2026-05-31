@@ -172,23 +172,63 @@
 
 <section id="contact" class="section container">
     <h2>Contact</h2>
-    <form action="https://formsubmit.co/robinson.fishing.92@gmail.com" method="POST">
+  <section id="contact" class="section container">
 
-        <label for="nom">Nom</label>
-        <input id="nom" name="nom" type="text" required>
+        <h2>Contact</h2>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+            <!-- Clé Web3Forms -->
+            <input
+                    type="hidden"
+                    name="access_key"
+                    value="9a172b6d-c232-432d-a833-ae14c5f8fe489">
 
-        <button type="submit" class="btn">
-            Envoyer
-        </button>
+            <!-- Sujet du mail -->
+            <input
+                    type="hidden"
+                    name="subject"
+                    value="Nouveau message Robinson Fishing">
 
-    </form>
-</section>
+            <!-- Anti-spam -->
+            <input
+                    type="checkbox"
+                    name="botcheck"
+                    style="display:none;">
+
+            <label for="nom">Nom</label>
+            <input
+                    id="nom"
+                    name="Nom"
+                    type="text"
+                    placeholder="Votre nom"
+                    required>
+
+            <label for="email">Email</label>
+            <input
+                    id="email"
+                    name="Email"
+                    type="email"
+                    placeholder="Votre adresse email"
+                    required>
+
+            <label for="message">Message</label>
+            <textarea
+                    id="message"
+                    name="Message"
+                    placeholder="Votre message"
+                    rows="6"
+                    required></textarea>
+
+            <button
+                    type="submit"
+                    class="btn">
+                Envoyer
+            </button>
+
+        </form>
+
+    </section>
 
 <footer>
 
